@@ -1,79 +1,89 @@
-.danmu{
-				position: absolute;
-				bottom: -1px;
-			}
-			.danmu{
-			width: 100%;
-			animation:danmuSmall 9800ms infinite linear 0s;
-			-moz-animation: danmuSmall 9800ms infinite linear 0s;	/* Firefox */
-			-webkit-animation: danmuSmall 9800ms infinite linear 0s;	/* Safari �� Chrome */
-			-o-animation: danmuSmall 9800ms infinite linear 0s;	/* Opera */
-			height: 180px;
-			overflow: hidden;
-			}
-			.stopdanmu{
-			width: 100%;
-			animation:danmuSmall 9800ms infinite linear 0s;
-			-moz-animation: danmuSmall 9800ms infinite linear 0s;	/* Firefox */
-			-webkit-animation: danmuSmall 9800ms infinite linear 0s;	/* Safari �� Chrome */
-			-o-animation: danmuSmall 9800ms infinite linear 0s;
-			animation-play-state:paused;
-			-webkit-animation-play-state:paused;
-			-webkit-animation-fill-mode:forwards;
-			}
-			.danmuimg{
-				float: left;
-			}
-			.danmuimg img{
-				width: 30px;
-				height: 30px;
-				border-radius: 15px;
-				display: block;
-			}
-			a{
-				text-decoration: none;
-				color: #FFFFFF;
-				padding: 20px;
-				border-radius: 8px;
-				line-height: 30px;
-				text-align: center;
-			}
-			.tanmua{
-				padding: 4px;
-    			float: left;
-    			margin: 10px 20px;
-    			border-radius: 10px;
-    			font-size: 12px;
-			}
-			@-webkit-keyframes danmuSmall {
-				0% {
-					right: -100%;
-				}
-				100% {
-					right: 108%;
-				}
-			}
-			@-moz-keyframes danmuSmall {
-				0% {
-					right: -105%;
-				}
-				100% {
-					right: 105%;
-				}
-			}
-			@-o-keyframes danmuSmall {
-				0% {
-					right: -105%;
-				}
-				100% {
-					right: 105%;
-				}
-			}
-			@keyframes danmuSmall {
-				0% {
-					right: -105%;
-				}
-				100% {
-					right: 105%;
-				}
-			}
+.danmu {
+    position: absolute;
+    bottom: -1px;
+}
+
+.danmu {
+    width: 100%;
+    animation: danmuSmall 9800ms infinite linear 0s;
+    -moz-animation: danmuSmall 9800ms infinite linear 0s; /* Firefox */
+    -webkit-animation: danmuSmall 9800ms infinite linear 0s; /* Safari �� Chrome */
+    -o-animation: danmuSmall 9800ms infinite linear 0s; /* Opera */
+    height: 180px;
+    overflow: hidden;
+}
+
+.stopdanmu {
+    width: 100%;
+    animation: danmuSmall 9800ms infinite linear 0s;
+    -moz-animation: danmuSmall 9800ms infinite linear 0s; /* Firefox */
+    -webkit-animation: danmuSmall 9800ms infinite linear 0s; /* Safari �� Chrome */
+    -o-animation: danmuSmall 9800ms infinite linear 0s;
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.danmuimg {
+    float: left;
+}
+
+.danmuimg img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.tanmua {
+    padding: 4px;
+    float: left;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+@-webkit-keyframes danmuSmall {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 108%;
+    }
+}
+
+@-moz-keyframes danmuSmall {
+    0% {
+        right: -105%;
+    }
+    100% {
+        right: 105%;
+    }
+}
+
+@-o-keyframes danmuSmall {
+    0% {
+        right: -105%;
+    }
+    100% {
+        right: 105%;
+    }
+}
+
+@keyframes danmuSmall {
+    0% {
+        right: -105%;
+    }
+    100% {
+        right: 105%;
+    }
+}
