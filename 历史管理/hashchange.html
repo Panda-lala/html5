@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基于hashchange事件管理导航</title>
+</head>
+<body>
+<a href="#article/1">文章1</a>
+<a href="#article/2">文章2</a>
+<div id="page-wrap"></div>
+<script>
+    var pageE1 = document.getElementById('page-wrap');
+    window.addEventListener('hashchange',function (e) {
+        if (e.newURL.indexOf('article/1') > 0){
+            pageE1.innerHTML = '<h1>第一篇文章</h1><p>这篇文章没讲什么东西</p>';
+        }else if(e.newURL.indexOf('article/2') > 0){
+            pageE1.innerHTML = '<h1>第二篇文章</h1><p>这篇文章没讲什么东西</p>';
+        }else{
+            alert('404该页面无法找到');
+        }
+    })
+</script>
+</body>
