@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>龙湖CRM</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css"/>
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css"/>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="skin-blue sidebar-mini wysihtml5-supported">
+<div class="wrapper">
+    <header class="main-header">
+				<span class="logo">
+					<img src="img/logo.png">
+				</span>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"> <span class="sr-only">Toggle navigation</span>
+            </a>
+            <div class="tag">
+                <ul></ul>
+            </div>
+            <div class="login">
+                <div>
+							<span class="user-image">
+								<img src="img/avatar5.png" class="userimg">
+								<br>
+								<i class="user-txt">赵四</i></span>
+                    <span class="user-alarm">
+								<a href="">
+									<i class="fa fa-bell-o fa-2x"></i>
+								</a>
+							</span>
+                    <span class="user-alarm">
+								<a href="">
+									<i class="fa fa-power-off fa-2x"></i>
+								</a>
+							</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 左导航 -->
+    <aside class="main-sidebar">
+        <section class="sidebar" style="height: auto;">
+            <ul class="sidebar-menu">
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-dashboard"></i>
+                        <span>首页</span>
+                        <span class="pull-right-container"></span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="icon iconfont"></i>
+                        <span>工作台</span>
+                        <span class="pull-right-container">
+									<i class="fa fa-angle-left pull-right"></i>
+								</span>
+                    </a>
+                    <ul class="treeview-menu" style="display: none;">
+                        <li>
+                            <a href="reception.html">
+                                接待工作台</a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                工单工作台</a>
+                        </li>
+                        <li>
+                            <a href="workbench.html">
+                                快速工单工作台</a>
+                        </li>
+                        <li>
+                            <a href="Complaints.html">
+                                投诉工作台</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview active">
+                    <a href="#">
+                        <i class="icon iconfont"></i>
+                        <span>工单创建</span>
+                        <span class="pull-right-container">
+									<i class="fa fa-angle-left pull-right"></i>
+								</span>
+                    </a>
+                    <ul class="treeview-menu menu-open" style="display: block;">
+                        <li>
+                            <a href="">
+                                业主房间报事</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                业主公区报事</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                自检房间报事</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                业主公区报事</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-search"></i>
+                        <span>数据查询</span>
+                        <span class="pull-right-container">
+									<i class="fa fa-angle-left pull-right"></i>
+								</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="">
+                                接待查询</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                工单查询</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <i class="icon iconfont">㐵</i>
+                        <span>帮助中心</span>
+                        <span class="pull-right-container">
+									<i class="fa fa-angle-left pull-right"></i>
+								</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="">
+                                CRM帮助</a>
+                        </li>
+                        <li>
+                            <a href="">
+                                管家端帮助</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class="content-wrapper container-fluid" style="min-height: 2840px;">
+        <div class="row">
+            <div class="col-sm-6 col-md-6" style="padding-top: 43px;">
+                <div class="panel panel-primary">
+                    <div class="bg-title panel-heading">
+                        <h3 class="panel-title">工单记录</h3>
+                    </div>
+                    <div class="panel-body-new">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>工单类型：维修工单</td>
+                                <td>项目：待分配</td>
+                            </tr>
+                            <tr>
+                                <td>物业编码：2-601</td>
+                                <td>报事人：张三</td>
+                            </tr>
+                            <tr>
+                                <td>楼栋：2栋</td>
+                                <td>手机号：15330988900</td>
+                            </tr>
+                            <tr>
+                                <td>报事来源：自查</td>
+                                <td>小区：富盛大厦</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    位置：2号楼
+                                </td>
+                                <td>
+                                    电梯：2号楼1单元2号梯
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    生产编号：公区保洁
+                                </td>
+                                <td>
+                                    分类：垂直梯
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="table-top">
+                            <h5>工单描述：</h5>
+                            <p>
+                                29号楼3单元1梯困人，请尽快解决29号楼3单元1梯困人，请尽快解决29号楼3单元1梯困人，请尽快解决29号楼3单元1梯困人，请尽快解决
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <p class="text-right">
+                    <button type="button" data-toggle="modal" data-target="#myModalResponse" class="btn btn-primary">
+                        回复
+                    </button>
+                    <button type="button" class="btn btn-primary">打印</button>
+                </p>
+                <div class="panel panel-primary">
+                    <div class="bg-title panel-heading">
+                        <h3 class="panel-title">跟进记录</h3>
+                    </div>
+                    <!--待分派-->
+                    <table class="table tableact">
+                        <tbody>
+                        <tr class="border-bian">
+                            <td class="td">
+                                <span class="order-title"><i class="iconjl fa fa-clock-o fa-lg"></i>待分派</span>
+                                <span class="rq">日期:2016-6-28 14:20:23</span>
+                                <span class="font-text-align-con">APP处理：「苟太平」创建工单</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--待分派end-->
+                    <!--已接单-->
+                    <table class="table tableact">
+                        <tbody>
+                        <tr class="border-bian">
+                            <td class="td">
+                                <span class="order-title"><i class="iconjl fa fa-list fa-lg"></i>已接单</span>
+                                <span class="rq">日期:2016-6-28 14:20:23</span>
+                                <span class="font-text-align-con">APP处理：「苟太平」创建工单</span>
+                                <span class="font-text-align-con">电梯位置：成都三千城1号楼2单元1梯</span>
+                                <span class="font-text-align-con">生产编号：2X-002</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--已接单end-->
+                    <!--处理中-->
+                    <table class="table tableact">
+                        <tbody>
+                        <tr class="border-bian">
+                            <td class="td">
+                                <span class="order-title"><i class="iconjl fa fa-wrench fa-lg"></i>处理中</span>
+                                <span class="rq">日期:2016-6-28 14:20:23</span>
+                                <span class="font-text-align-con">APP处理：「苟太平」创建工单</span>
+                                <span class="font-text-align-con">电梯位置：成都三千城1号楼2单元1梯</span>
+                                <span class="font-text-align-con">生产编号：2X-002</span>
+                                <span class="font-text-align-con">到达时间：2016-08-12  14：00：00</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--处理中end-->
+                    <!--已完成-->
+                    <table class="table tableact">
+                        <tbody>
+                        <tr class="border-bian">
+                            <td class="td">
+                                <span class="order-title"><i
+                                        class="iconjl fa fa-check-square-o fa-4 fa-lg"></i>已完成</span>
+                                <span class="rq">日期:2016-6-28 14:20:23</span>
+                                <span class="font-text-align-con">APP处理：「苟太平」创建工单</span>
+                                <span class="font-text-align-con">故障主部件：曳引系统</span>
+                                <span class="font-text-align-con">故障原因  ：咬死</span>
+                                <span class="font-text-align-con">处置方案：更换故障件+技术调整</span>
+                                <span class="font-text-align-con">维修结束时间：2016-08-18  10:30:00</span>
+                                <span class="font-text-align-con">备注：更换电梯部件DF-800系列</span>
+                                <span class="font-text-align-con">费用：¥500.00</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td">
+                                <i class="fa fa-file-photo-o" aria-hidden="true"></i>旧故障件照片<br>
+                                <p class="pic-orderbg">
+                                </p>
+                                <section id="examples" class="section examples-section">
+                                    <div class="image-row">
+                                        <div class="image-set">
+                                            <a class="example-image-link" href="img/3793633099_3e1e53e4ac_o.jpg"
+                                               data-lightbox="example-set" title="支持方向键切换">
+                                                <img class="example-image pic-order"
+                                                     src="img/3793633099_3e1e53e4ac_o.jpg">
+                                            </a>
+                                            <a class="example-image-link" href="img/3793633099_3e1e53e4ac_o.jpg"
+                                               data-lightbox="example-set" title="支持方向键切换">
+                                                <img class="example-image pic-order"
+                                                     src="img/3793633099_3e1e53e4ac_o.jpg">
+                                            </a>
+                                            <a class="example-image-link" href="img/3793633099_3e1e53e4ac_o.jpg"
+                                               data-lightbox="example-set" title="支持方向键切换">
+                                                <img class="example-image pic-order"
+                                                     src="img/3793633099_3e1e53e4ac_o.jpg">
+                                            </a>
+                                            <a class="example-image-link" href="img/3793633099_3e1e53e4ac_o.jpg"
+                                               data-lightbox="example-set" title="支持方向键切换">
+                                                <img class="example-image pic-order"
+                                                     src="img/3793633099_3e1e53e4ac_o.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </td>
+                        </tr>
+                        <tr class="border-bian">
+                            <td class="td">
+                                <i class="fa fa-file-photo-o" aria-hidden="true"></i>新故障件照片
+                                <br>
+                                <p class="pic-orderbg">
+                                </p>
+                                <section id="examples" class="section examples-section">
+                                    <div class="image-row">
+                                        <div class="image-set">
+                                            <a class="example-image-link" href="img/3793633099_3e1e53e4ac_o.jpg"
+                                               data-lightbox="example-set" title="支持方向键切换">
+                                                <img class="example-image pic-order"
+                                                     src="img/3793633099_3e1e53e4ac_o.jpg">
+                                            </a>
+                                            <a class="example-image-link" href="img/3793633099_3e1e53e4ac_o.jpg"
+                                               data-lightbox="example-set" title="支持方向键切换">
+                                                <img class="example-image pic-order"
+                                                     src="img/3793633099_3e1e53e4ac_o.jpg">
+                                            </a>
+                                            <a class="example-image-link" href="img/3793633099_3e1e53e4ac_o.jpg"
+                                               data-lightbox="example-set" title="支持方向键切换">
+                                                <img class="example-image pic-order"
+                                                     src="img/3793633099_3e1e53e4ac_o.jpg">
+                                            </a>
+                                            <a class="example-image-link" href="img/3793633099_3e1e53e4ac_o.jpg"
+                                               data-lightbox="example-set" title="支持方向键切换">
+                                                <img class="example-image pic-order"
+                                                     src="img/3793633099_3e1e53e4ac_o.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--已完成end-->
+                    <!--待完结-->
+                    <table class="table tableact">
+                        <tbody>
+                        <tr class="border-bian">
+                            <td class="td">
+                                <span class="order-title"><i class="iconjl fa fa-paste fa-lg"></i>待完结</span>
+                                <span class="rq">日期:2016-6-28 14:20:23</span>
+                                <span class="font-text-align-con">APP处理：「苟太平」创建工单</span>
+                                <span class="font-text-align-con">备注：需要更换付费部件</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--待完结end-->
+                    <!--已完结-->
+                    <table class="table tableact">
+                        <tbody>
+                        <tr class="border-bian">
+                            <td class="td">
+                                <span class="order-title"><i class="iconjl fa fa-bullhorn fa-lg" aria-hidden="true"></i>已完结</span>
+                                <span class="rq">日期:2016-6-28 14:20:23</span>
+                                <span class="font-text-align-con">APP处理：「苟太平」创建工单</span>
+                                <span class="font-text-align-con">备注：需要更换付费部件</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!--已完结end-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--回复开始-->
+<div class="modal fade" id="myModalResponse" tabindex="-1" role="dialog" aria-labelledby=myModalResponse">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="replygb">
+                回复内容
+                <span class="clo">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="closen" aria-hidden="true">×</span>
+                    </button>
+                </span>
+                <i class="fa fa-search tb-icon"></i>
+            </div>
+            <div class="modal-body">
+                <textarea class="replytxt form-control" rows="3"></textarea>
+            </div>
+            <div class="btn-bg">
+                <button type="button" class="margin-right btn btn-primary">提交</button>
+                <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-primary">返回</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--回复结束-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="dist/js/app.min.js"></script>
+<script type="text/javascript" src="js/LiftCommon.js"></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
+</body>
+
+</html>
